@@ -45,9 +45,9 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/bad', (req, res) => {
-  res.send({
-    error: 'Unable to fufill request'
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project Page'
   });
 });
 
